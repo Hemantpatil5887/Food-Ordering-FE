@@ -1,0 +1,119 @@
+@import './variables';
+@import url(http://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,400italic,500,500italic,700,700italic,900italic,900);
+
+html, body, html * {
+  font-family: 'Roboto', sans-serif;
+}
+.profile-details {
+    position: absolute;
+    bottom: 20px;
+    padding: 8px 8px 8px 32px;
+    color: var(--white);
+}
+
+.main-container {
+    display: block;
+    float: left;
+    background-color: var(--white);
+    min-height: calc(100vh - 60px);
+    width: 100%;
+    margin-top: 65px;
+}
+
+.form-container {
+    max-width: 40%;
+    margin: 0 auto;
+}
+
+.form-button-container {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.form-button {
+    max-width: 120px;
+}
+
+.form-inline {
+    display: flex;
+    justify-content: space-between;
+}
+
+.form-inline-input {
+    flex: 48%;
+    max-width: 48%;
+    margin: 0px 1%;
+    &:first-child {
+        margin-left: 0px;
+    }
+    &:last-child {
+        margin-right: 0px;
+    }
+}
+
+.table-layout{
+    table-layout: fixed;
+}
+.table__data {
+    word-break : break-all;
+    white-space:pre-wrap !important;
+}
+.table-container {
+    table-layout: fixed;
+    padding: 10px 20px;
+    
+}
+
+.table-row {
+    max-width: 20px;
+    word-wrap: break-word;
+    white-space: pre-wrap ;
+    
+}
+
+.table__heading{
+    border: 1px solid black;
+}
+
+.table__data {
+    border: 1px solid black;
+
+}
+
+@media (max-width: $small-grid-breakpoint) {
+    .form-container {
+        max-width: 80%;
+    }
+    .form-button-container {
+        justify-content: center;
+    }
+    .form-button {
+        max-width: 100%;
+    }
+    .form-inline {
+        display: block;
+    }
+    .form-inline-input {
+        max-width: 100%;
+        &:first-child,
+        &:last-child {
+            margin: 0px;
+        }
+    }
+}
+
+
+
+.sidebar-container{
+    box-shadow: 3px 0px #888686;
+}
+.absolute-spinner{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    top: calc(50% - 25px);
+    left: calc(50% - 25px);
+    .spinner{
+        color: #ff5200;
+    }
+}

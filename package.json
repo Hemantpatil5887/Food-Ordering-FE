@@ -1,0 +1,60 @@
+{
+  "name": "food-ordering-fe",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@testing-library/jest-dom": "^5.11.9",
+    "@testing-library/react": "^11.2.5",
+    "@testing-library/user-event": "^12.7.2",
+    "axios": "^0.21.1",
+    "bootstrap": "^5.3.3",
+    "lodash": "^4.17.21",
+    "moment": "^2.29.1",
+    "node-sass": "^5.0.0",
+    "react": "^18.0.0",
+    "react-bootstrap": "^2.10.5",
+    "react-bootstrap-icons": "^1.11.4",
+    "react-dom": "^18.3.1",
+    "react-redux": "^7.2.2",
+    "react-router-dom": "^5.2.0",
+    "react-scripts": "^4.0.3",
+    "redux": "^4.0.5",
+    "web-vitals": "^1.1.0"
+  },
+  "scripts": {
+    "start": "PORT=3000 DISABLE_ESLINT_PLUGIN=true react-scripts start",
+    "build": "REACT_APP_ENV=local PUBLIC_URL=/demo GENERATE_SOURCEMAP=false react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "move:dist": "rm -rf dist && mv build dist",
+    "lint": "./node_modules/.bin/eslint ./src",
+    "lint-fix": "./node_modules/.bin/eslint ./src --fix",
+    "prepare": "husky install"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest",
+      "airbnb"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "eslint": "^7.11.0",
+    "eslint-config-airbnb": "^19.0.4",
+    "eslint-plugin-react": "^7.33.1",
+    "redux-devtools-extension": "^2.13.9",
+    "husky": "^8.0.0"
+  }
+}

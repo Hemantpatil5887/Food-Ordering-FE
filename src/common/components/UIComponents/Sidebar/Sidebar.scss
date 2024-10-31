@@ -1,0 +1,72 @@
+.sidebar-container {
+  min-height: 100vh; /* 100% Full-height */
+  width: 0; /* 0 width - change this with JavaScript */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Stay on top */
+  top: 0; /* Stay at the top */
+  left: 0;
+  background-color: var(--primary); /* Black*/
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 10px; /* Place content 60px from the top */
+  box-sizing: border-box;
+  transition: 0.5s; /* 0.5 second transition effect to slide in the sidebar-container */
+}
+
+.sidebar-image {
+  max-width: 50%;
+  padding: 8px 8px 8px 32px;
+}
+
+/* The navigation menu links */
+.sidebar-item {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  color: var(--white);
+  display: block;
+  transition: 0.3s;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidebar-item:hover, .sidebar-item--active {
+  background-color: var(--white);
+  color: var(--primary);
+}
+
+/* Position and style the close button (top right corner) */
+.sidebar-container .close-btn {
+  position: absolute;
+  color: var(--white);
+  right: 10px;
+  background-color: transparent;
+  outline: none;
+  border: none;
+}
+
+.open-btn, .close-btn {
+    top: 0px;
+    font-size: 36px;
+    cursor: pointer;
+}
+
+.headerdiv{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.open-btn {
+    position: relative;
+    left: 10px;
+}
+
+.region{
+  width: 20%;
+  margin: 10px;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidebar-container (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidebar-container {
+    padding-top: 15px;
+  }
+}
